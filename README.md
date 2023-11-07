@@ -18,11 +18,10 @@ pip install -r requirements.txt
 
 ## Setup
 **1. Configuration**
-- configure program to lock in `src/programlock.py`: change .exe name in the variable `PROGRAM` to the program that you want to lock
-- configure times in which it is allowed to use the programm in `time_settings.py`:
+- change the configuration in `src\settings.py`: 
+  - configure times in which it is allowed to use the programm in `time_settings.py`:
   - edit the timespans in the `ALLOWED_TIME` dictionary
-  - do not remove a day entry from the dictionary
-  - stay to the format of the example
+  - edit the maximum times spent with the program in the `MAX_ALLOWED_MINUTES` dictionary
 
 **2. Installation**
 - create executable: 
