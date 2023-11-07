@@ -8,6 +8,8 @@ This can be individually configured for each weekday.
 If the amount of time allowed is exceeded or if the usage is not allowed at the current clock time, the program is closed.
 A check if the program is running is executed every five minutes (can be configured).
 
+Note: Currently, this is a very basic app without a graphical user interface for configuration. 
+
 ## Requirements
 - requires python 3
 - install python dependencies with 

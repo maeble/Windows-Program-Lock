@@ -38,6 +38,6 @@ LOCK_POLICY = {
 # Advanced configuration
 #######################################################################################################
 
-CHECK_INTERVAL_MINUTES=1 # how often does the app check whether the controlled program runs unallowed
+CHECK_INTERVAL_MINUTES=5 # how often does the app check whether the controlled program runs unallowed
 LOG_FILE_NAME="programlock.error.log" 
 LOG_LEVEL=logging.ERROR 
