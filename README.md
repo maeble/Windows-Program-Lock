@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 ## Setup
 **1. Configuration**
-- configure program to lock in `close_program_loop.py`: change .exe name in the variable `KILL_TASK` to the program that you want to lock
+- configure program to lock in `src/programlock.py`: change .exe name in the variable `PROGRAM` to the program that you want to lock
 - configure times in which it is allowed to use the programm in `time_settings.py`:
   - edit the timespans in the `ALLOWED_TIME` dictionary
   - do not remove a day entry from the dictionary
@@ -19,7 +19,7 @@ pip install -r requirements.txt
 **2. Installation**
 - create executable: 
 ```shell
-python -m PyInstaller --onefile py-program-lock\close_program_loop.py
+python -m PyInstaller --onefile src\programlock.py
 ```
 - move created .exe file to the Windows autostart folder: 
   - Windows + R

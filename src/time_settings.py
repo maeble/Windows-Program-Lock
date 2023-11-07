@@ -1,4 +1,7 @@
 import datetime
+import logging
+
+# CONFIGURATION ###################################################################
 
 ALLOWED_TIME = {
     "Monday": ("19:30", "22:00"),
@@ -10,13 +13,15 @@ ALLOWED_TIME = {
     "Sunday": 180
 }
 
+###################################################################################
+
 def __timestring_to_todaytime(now, timestring):
     time_array = [int(num) for num in timestring.split(":")] # [hours, minutes]
     return now.replace(hour=time_array[0], minute=time_array[1])
 
 def __is_time_within_span(now, timespan):
     if type(timespan)==tuple:
-        #print(f"Is {now.time()} within {timespan}?")
+        logging.debug(f"Is {now.time()} within allowed timespan {timespan}?")
         lower_bound = __timestring_to_todaytime(now,list(timespan)[0])
         upper_bound = __timestring_to_todaytime(now,list(timespan)[1])
         if now < lower_bound or now > upper_bound:
