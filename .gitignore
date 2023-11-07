@@ -2,5 +2,4 @@ dist/
 build/
 *.spec
 *__pycache__/
-close_program_loop/
-programlock.log
+*/programlock.log*

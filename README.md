@@ -21,10 +21,11 @@ pip install -r requirements.txt
 ```shell
 python -m PyInstaller --onefile src\programlock.py
 ```
-- move created .exe file to the Windows autostart folder: 
+- move the file `programlock.bat` to the Windows autostart folder: 
   - Windows + R
   - enter: `shell:startup` -> autostart folder is opened automatically
-  - copy-paste the created .exe from `dist/` folder to autostart folder
+  - copy-paste the file to the autostart folder
+- restart the computer for activation of the programlock app
 
 ## Change configuration
 Change your configuration in the source files, create a new .exe file and replace the old .exe with the new one in the Windows autostart folder.

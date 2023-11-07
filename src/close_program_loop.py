@@ -10,7 +10,7 @@ def close_program_loop(task:str, sleep_minutes:int=5):
 
     Parameter:
     - task [str]: the task to be closed
-    - slee_minutes [int]: how often it is checked whether the program is running
+    - sleep_minutes [int]: how often it is checked whether the program is running
     """
     while True:
         logging.info("Checking program status...")
