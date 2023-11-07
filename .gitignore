@@ -1,0 +1,5 @@
+dist/
+build/
+*.spec
+*__pycache__/
+close_program_loop/
