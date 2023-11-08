@@ -20,8 +20,13 @@ pip install -r requirements.txt
 
 ## Setup
 **1. Configuration**
-- change the configuration in `src\settings.py`: 
-  - configure times in which it is allowed to use the programm in `time_settings.py`:
+- change the configuration in `src\settings.py`. The variables are already filled with example configurations. Just replace them and adapt it to your needs.
+  - configure which program should be controlled. Example:
+    ```python
+    # the program that is to be locked
+    PROGRAM="steam.exe" 
+    ```
+  - configure the times in which it is allowed to use the program:
     - edit the allowed timespans in the `ALLOWED_TIME` dictionary.  
     Example configuration:
     ```python
@@ -69,3 +74,8 @@ Change your configuration in the source files as described above and create a ne
 
 ## Deinstallation
 Delete the programlock shortcut file in the Windows autostart folder.
+
+## Limitations
+
+- Currently, there is no GUI for configurations.
+- Currently, only one program can be controlled (with one .exe).
